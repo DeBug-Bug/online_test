@@ -1,0 +1,12 @@
+{
+    "源数据.一级风险预警金额占比": "table.amt_rate",
+    "源数据.一级风险预警金额": "table.first_risk_amt",
+    "固定配置.一级风险预警金额占比.四分位": "configParam.amt_rate.fourQuantileValue",
+    "固定配置.一级风险预警金额占比.三分位": "configParam.amt_rate.threeQuantileValue",
+    "固定配置.一级风险预警金额占比.一分位": "configParam.amt_rate.oneQuantileValue",
+    "固定配置.一级风险预警金额占比.零分位": "configParam.amt_rate.zeroQuantileValue",
+    "固定配置.一级风险预警金额.四分位": "configParam.first_risk_amt.fourQuantileValue",
+    "固定配置.一级风险预警金额.三分位": "configParam.first_risk_amt.threeQuantileValue",
+    "固定配置.一级风险预警金额.一分位": "configParam.first_risk_amt.oneQuantileValue",
+    "固定配置.一级风险预警金额.零分位": "configParam.first_risk_amt.zeroQuantileValue"
+}

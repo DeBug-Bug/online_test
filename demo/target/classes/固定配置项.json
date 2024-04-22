@@ -1,0 +1,28 @@
+{
+    "amt_rate": {
+        "averageValue ": 0.68,
+        "oneQuantileValue": 0.57,
+        "twoQuantileValue": 0.69,
+        "fourQuantileValue": 0.99,
+        "zeroQuantileValue": 0.24,
+        "threeQuantileValue": 0.79
+    },
+    "cnt_rate": {
+        "averageValue ": 0.24,
+        "oneQuantileValue": 0.19,
+        "twoQuantileValue": 0.24,
+        "fourQuantileValue": 0.46,
+        "zeroQuantileValue": 0.03,
+        "threeQuantileValue": 0.3
+    },
+    "nullValueRule": 1,
+    "first_risk_amt": {
+        "amount_unit": "元",
+        "averageValue": 832772.77,
+        "oneQuantileValue": 307876.65,
+        "twoQuantileValue": 760265.59,
+        "fourQuantileValue": 3123517.44,
+        "zeroQuantileValue": 0,
+        "threeQuantileValue": 1434802.27
+    }
+}
