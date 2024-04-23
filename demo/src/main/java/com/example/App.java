@@ -1,7 +1,5 @@
 package com.example;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.Collator;
@@ -21,17 +19,12 @@ import com.ql.util.express.ExpressRunner;
 public class App {
     private App() {
     }
-
-    /**
-     * Says hello to the world.
-     * 
-     * @param args The arguments of the program.
-     */
     public static void main(String[] args) throws Exception {
         ExpressRunner runner = new ExpressRunner();
         DefaultContext<String, Object> context = new DefaultContext<String, Object>();
         // 读取源数据内容
         String paramDbStr = getFileContent("源数据内容.json");
+        
         context.put("table", JSON.parseObject(paramDbStr));
 
         // 读取固定配置内容
@@ -76,10 +69,11 @@ public class App {
                 System.out.println("资源文件不存在");
                 return null;
             }
-            // 使用 Scanner 读取输入流内容
-            Scanner scanner = new Scanner(inputStream).useDelimiter("\\A");
-            String content = scanner.hasNext() ? scanner.next() : "";
-            stringBuilder.append(content);
+            try (Scanner scanner = new Scanner(inputStream).useDelimiter("\\A")) {
+                String content = scanner.hasNext() ? scanner.next() : "";
+                stringBuilder.append(content);
+                scanner.close();
+            }
             return stringBuilder.toString();
         } catch (IOException e) {
             e.printStackTrace();
